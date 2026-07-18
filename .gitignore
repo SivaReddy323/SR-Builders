@@ -1,0 +1,8 @@
+node_modules/
+.DS_Store
+assets/images/*.db
+dist/
+env/
+*.pyc
+__pycache__/
+/.vscode/
