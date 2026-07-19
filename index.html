@@ -8,13 +8,18 @@
       name="description"
       content="SK Builders creates beautiful, durable dream homes with quality craftsmanship and trusted construction services."
     />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/download.png" />
+    <link rel="apple-touch-icon" href="assets/images/download.png" />
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <header>
       <div class="container">
         <nav>
-          <div class="brand">SK <span>Builders</span></div>
+          <a class="brand" href="#">
+            <img class="brand-logo" src="assets/images/download.png" alt="SK Builders logo" />
+            <span class="brand-name">SK <span>Builders</span></span>
+          </a>
           <div class="nav-links">
             <a href="#about">About</a>
             <a href="#services">Services</a>
@@ -38,13 +43,19 @@
           </div>
         </div>
         <div class="hero-card">
-          <img src="assets/images/fire.png" alt="Technicians installing electrical wiring, plumbing pipes, CCTV cameras, and fire safety systems" />
+          <img
+            src="assets/images/hero-bg.jpg"
+            alt="Technicians installing electrical wiring, plumbing pipes, CCTV cameras, and fire safety systems"
+          />
         </div>
       </section>
 
       <section id="about" class="section container">
         <div class="about-grid">
-          <img src="assets/images/about-team-building-services.jpg" alt="Team of electricians, plumbers, and fire-safety technicians" />
+          <img
+            src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=1600&q=80"
+            alt="Team of electricians, plumbers, and fire-safety technicians"
+          />
           <div class="about-text">
             <h2>About Us</h2>
             <p>We are a multi‑service building installation company specializing in <strong>electrical wiring</strong>, <strong>plumbing systems</strong>, <strong>CCTV surveillance</strong>, and <strong>fire‑fighting safety solutions</strong>. Our goal is to deliver <strong>safe, durable, and cost‑effective installations</strong> for residential, commercial, and industrial buildings.</p>
@@ -53,77 +64,225 @@
       </section>
 
       <section id="services" class="section container">
-        <h2>Our Services</h2>
-        <div class="service-grid">
-          <div class="service-card">
-            <div class="service-body">
-              <h3>Electrical Installation</h3>
-              <ul>
-                <li>Complete wiring for homes &amp; commercial buildings</li>
-                <li>Panel board installation</li>
-                <li>LED lighting &amp; energy‑saving solutions</li>
-                <li>Earthing &amp; surge protection</li>
-                <li>Generator &amp; inverter setup</li>
-              </ul>
-            </div>
+        <h2>Core Services</h2>
+        
+        <div class="services-cards-grid">
+          <div class="services-card">
+            <h3>Residential Electrical Services</h3>
+            <ul class="service-list">
+              <li>Wiring and rewiring of homes</li>
+              <li>Electrical panel upgrades</li>
+              <li>Lighting installation (interior and exterior)</li>
+              <li>Electrical outlets and switches installation</li>
+              <li>Home automation systems</li>
+              <li>Electrical troubleshooting and repairs</li>
+              <li>Smoke detector and security system installation</li>
+            </ul>
           </div>
 
-          <div class="service-card">
-            <div class="service-body">
-              <h3>Plumbing Installation</h3>
-              <ul>
-                <li>New pipeline installation (PVC, CPVC, PEX, GI)</li>
-                <li>Bathroom &amp; kitchen plumbing</li>
-                <li>Water tank &amp; motor installation</li>
-                <li>Drainage line repair</li>
-                <li>Commercial plumbing for apartments &amp; offices</li>
-              </ul>
-            </div>
+          <div class="services-card">
+            <h3>Commercial Electrical Services</h3>
+            <ul class="service-list">
+              <li>Installation and maintenance of lighting, outlets, and electrical panels</li>
+              <li>Electrical systems design for commercial buildings</li>
+              <li>Energy-efficient solutions (LED lighting, solar installations)</li>
+              <li>Wiring for HVAC systems, refrigeration, and equipment</li>
+              <li>Electrical upgrades for new construction or renovations</li>
+              <li>Electrical inspections and compliance with codes</li>
+            </ul>
           </div>
 
-          <div class="service-card">
-            <div class="service-body">
-              <h3>CCTV &amp; Security Systems</h3>
-              <ul>
-                <li>Indoor &amp; outdoor CCTV installation</li>
-                <li>DVR/NVR setup &amp; mobile monitoring</li>
-                <li>Night‑vision &amp; motion‑detection cameras</li>
-                <li>Access control &amp; biometric systems</li>
-                <li>Annual maintenance contracts</li>
-              </ul>
-            </div>
+          <div class="services-card">
+            <h3>Fire Fitting &amp; Safety Systems</h3>
+            <ul class="service-list">
+              <li>Fire alarm system installation</li>
+              <li>Smoke &amp; heat detectors</li>
+              <li>Fire extinguisher setup &amp; sprinklers</li>
+              <li>Emergency exit lighting</li>
+              <li>Fire safety audits &amp; compliance</li>
+              <li>Professional firefighting equipment installation</li>
+              <li>Fire safety training and consultation</li>
+            </ul>
           </div>
 
-          <div class="service-card">
-            <div class="service-body">
-              <h3>Fire‑Fighting &amp; Safety Systems</h3>
-              <ul>
-                <li>Fire alarm system installation</li>
-                <li>Smoke &amp; heat detectors</li>
-                <li>Fire extinguisher setup &amp; sprinklers</li>
-                <li>Emergency exit lighting</li>
-                <li>Fire safety audits &amp; compliance</li>
-              </ul>
+          <div class="services-card">
+            <h3>CCTV &amp; Security Systems</h3>
+            <ul class="service-list">
+              <li>Indoor &amp; outdoor CCTV installation</li>
+              <li>DVR/NVR setup &amp; mobile monitoring</li>
+              <li>Night-vision &amp; motion-detection cameras</li>
+              <li>Access control &amp; biometric systems</li>
+              <li>Annual maintenance contracts</li>
+              <li>Professional camera fitting and calibration</li>
+              <li>24/7 surveillance system monitoring</li>
+            </ul>
+          </div>
+      </section>
+
+      <section id="qualifications" class="section container">
+        <h2>Key Qualifications</h2>
+        <div class="qualifications-grid">
+          <div class="qualification-card">
+            <h3>Certified Electricians</h3>
+            <p>The team is trained and certified in various aspects of electrical work, including NEC (National Electrical Code) standards and safety protocols.</p>
+          </div>
+          <div class="qualification-card">
+            <h3>Years of Experience</h3>
+            <p>Extensive experience across residential, commercial, and industrial projects with a proven track record of excellence.</p>
+          </div>
+          <div class="qualification-card">
+            <h3>Safety Standards</h3>
+            <p>Emphasis on adhering to strict safety measures to ensure a safe work environment and high-quality service.</p>
+          </div>
+          <div class="qualification-card">
+            <h3>Customer-Centric Approach</h3>
+            <p>Committed to providing reliable and cost-effective solutions tailored to client needs with exceptional support.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="why-us" class="section container">
+        <h2>Why Choose Us?</h2>
+        <div class="reasons-grid">
+          <div class="reason-card">
+            <h3>Expertise &amp; Quality</h3>
+            <p>Our team of licensed electricians has the experience and skills to handle projects of any size with precision.</p>
+          </div>
+          <div class="reason-card">
+            <h3>Commitment to Safety</h3>
+            <p>We prioritize safety for both workers and clients, ensuring all projects meet the highest safety standards.</p>
+          </div>
+          <div class="reason-card">
+            <h3>Timely &amp; Reliable</h3>
+            <p>We understand urgency and strive to complete projects on time, every time, without compromising quality.</p>
+          </div>
+          <div class="reason-card">
+            <h3>Customer Satisfaction</h3>
+            <p>We work closely with clients to ensure satisfaction, offering warranties and comprehensive post-installation support.</p>
+          </div>
+          <div class="reason-card">
+            <h3>Competitive Pricing</h3>
+            <p>We provide affordable pricing without compromising on quality, safety, or service excellence.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section container">
+        <h2>Current Projects</h2>
+        <div class="projects-grid">
+          <div class="project-item">
+            <img src="assets/images/project-1.jpg" alt="The Olympus By Sumadhura Vasavi project installation">
+            <div class="project-content">
+              <h3>The Olympus By Sumadhura Vasavi</h3>
+              <p><strong>Project info:</strong> G+44 Floors</p>
+              <p><strong>Location:</strong> Nanakramguda, Hyderabad</p>
+            </div>
+          </div>
+          <div class="project-item">
+            <img src="assets/images/project-2.jpg" alt="Garden by the Brook By Sumadhura project installation">
+            <div class="project-content">
+              <h3>Garden by the Brook By Sumadhura</h3>
+              <p><strong>Project info:</strong> G+15 Floors</p>
+              <p><strong>Location:</strong> Satamrai, Hyderabad</p>
+            </div>
+          </div>
+          <div class="project-item">
+            <img src="assets/images/project-3.jpg" alt="Aparna Green Escape By Aparna project installation">
+            <div class="project-content">
+              <h3>Aparna Green Escape By Aparna</h3>
+              <p><strong>Project info:</strong> G+28 Floors</p>
+              <p><strong>Location:</strong> Kompally, Hyderabad</p>
+            </div>
+          </div>
+          <div class="project-item">
+            <img src="assets/images/project-4.jpg" alt="Foure Wall By Four Wall Builders project installation">
+            <div class="project-content">
+              <h3>Foure Wall By Four Wall Builders</h3>
+              <p><strong>Project info:</strong> G+13 Floors</p>
+              <p><strong>Location:</strong> Sajjapura, Bangalore</p>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="industries" class="section container">
-        <h2>Industries We Serve</h2>
-        <div class="industries">
-          <ul>
-                <li>Residential buildings</li>
-                <li>Commercial offices</li>
-                <li>Retail stores &amp; malls</li>
-                <li>Schools &amp; colleges</li>
-                <li>Hospitals &amp; clinics</li>
-                <li>Warehouses &amp; industries</li>
-                <li>Hotels &amp; restaurants</li>
-          </ul>
+      <section id="past-projects" class="section container">
+        <h2>Past Projects</h2>
+        <div class="projects-grid">
+          <div class="project-item">
+            <img src="assets/images/project-6.jpg" alt="Acropolis By Sumadhura project installation">
+            <div class="project-content">
+              <h3>Acropolis By Sumadhura</h3>
+              <p><strong>Project Info:</strong> G+32</p>
+              <p><strong>Location:</strong> Nanakramguda, Hyderabad</p>
+              <p><strong>Date of Commission:</strong> 2022</p>
+            </div>
+          </div>
+          <div class="project-item">
+            <img src="assets/images/project-9.jpg" alt="Jewel Heights By Sai Tirumala Constructions project installation">
+            <div class="project-content">
+              <h3>Jewel Heights By Sai Tirumala Constructions</h3>
+              <p><strong>Project Info:</strong> G+13</p>
+              <p><strong>Location:</strong> KPHB, Hyderabad</p>
+              <p><strong>Date of Commission:</strong> 2023</p>
+            </div>
+          </div>
+          <div class="project-item">
+            <img src="assets/images/project-10.jpg" alt="Sequoia By Marvel Infra Builders project installation">
+            <div class="project-content">
+              <h3>Sequoia By Marvel Infra Builders</h3>
+              <p><strong>Project Info:</strong> G+13</p>
+              <p><strong>Location:</strong> Whitefield, Bangalore</p>
+              <p><strong>Date of Commission:</strong> 2020</p>
+            </div>
+          </div>
+          <div class="project-item">
+            <img src="assets/images/project-1.jpg" alt="Snow Drops By SS Builders project installation">
+            <div class="project-content">
+              <h3>Snow Drops By SS Builders</h3>
+              <p><strong>Project Info:</strong> G+5</p>
+              <p><strong>Location:</strong> Whitefield, Bangalore</p>
+              <p><strong>Date of Commission:</strong> 2019</p>
+            </div>
+          </div>
+          <div class="project-item">
+            <img src="assets/images/project-2.jpg" alt="Gayathri Good Life By Sri Gayathri Projects project installation">
+            <div class="project-content">
+              <h3>Gayathri Good Life By Sri Gayathri Projects</h3>
+              <p><strong>Project Info:</strong> G+5</p>
+              <p><strong>Location:</strong> Seegehalli, Bangalore</p>
+              <p><strong>Date of Commission:</strong> 2017</p>
+            </div>
+          </div>
+          <div class="project-item">
+            <img src="assets/images/project-3.jpg" alt="Casablanca By Balaji Developers project installation">
+            <div class="project-content">
+              <h3>Casablanca By Balaji Developers</h3>
+              <p><strong>Project Info:</strong> G+5</p>
+              <p><strong>Location:</strong> Whitefield, Bangalore</p>
+              <p><strong>Date of Commission:</strong> 2015</p>
+            </div>
+          </div>
+          <div class="project-item">
+            <img src="assets/images/project-4.jpg" alt="Vasathi Avante By Vasathi Builders project installation">
+            <div class="project-content">
+              <h3>Vasathi Avante By Vasathi Builders</h3>
+              <p><strong>Project Info:</strong> G+13</p>
+              <p><strong>Location:</strong> Manyata Tech Park, Bangalore</p>
+              <p><strong>Date of Commission:</strong> 2015</p>
+            </div>
+          </div>
+          <div class="project-item">
+            <img src="assets/images/project-6.jpg" alt="Venu Projects By Venu Builders project installation">
+            <div class="project-content">
+              <h3>Venu Projects By Venu Builders</h3>
+              <p><strong>Project Info:</strong> G+5</p>
+              <p><strong>Location:</strong> Dilsukhnagar, Hyderabad</p>
+              <p><strong>Date of Commission:</strong>2014</p>
+            </div>
+          </div>
         </div>
       </section>
-    </main>
+
 
     <footer id="contact" class="site-footer">
       <div class="container">
@@ -140,6 +299,7 @@
             <a href="#services">Plumbing Works</a>
             <a href="#mvp">MVP Packages</a>
             <a href="#mvp">Fire Fitting</a>
+            <a href="#mvp">CC Cameras Fitting</a>
           </div>
 
           <div class="footer-links">
@@ -152,15 +312,15 @@
 
           <div class="footer-contact">
             <h4>Get In Touch</h4>
-            <div>info@skbuilders.com</div>
-            <div>(040) 1234 5678</div>
-            <div>Hyderabad, India</div>
+            <div class="footer-contact-item"><strong>Phone:</strong> <a href="tel:7780208732">7780208732</a></div>
+            <div class="footer-contact-item"><strong>Phone:</strong> <a href="tel:9553688562">9553688562</a></div>
+            <div class="footer-contact-item"><strong>Email:</strong> <a href="mailto:info@skbuilders.com">info@skbuilders.com</a></div>
+            <div class="footer-contact-item">Hyderabad, India</div>
           </div>
         </div>
 
         <div class="footer-bottom">
           <div>© 2026 SK Builders. All rights reserved.</div>
-          <div>Adobe Silver Solution Partner</div>
         </div>
       </div>
     </footer>
