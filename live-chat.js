@@ -14,26 +14,43 @@ if (liveChatLauncher && liveChatWidget && liveChatMessages && liveChatForm && li
     liveChatMessages.scrollTop = liveChatMessages.scrollHeight;
   };
 
-  const openChat = () => {
-    liveChatWidget.classList.add('is-open');
-    liveChatWidget.setAttribute('aria-hidden', 'false');
-    liveChatLauncher.setAttribute('aria-expanded', 'true');
-    liveChatInput.focus();
+  const isChatOpen = () => liveChatWidget.classList.contains('is-open');
+
+  const setChatOpenState = (open) => {
+    liveChatWidget.classList.toggle('is-open', open);
+    liveChatWidget.setAttribute('aria-hidden', open ? 'false' : 'true');
+    liveChatLauncher.setAttribute('aria-expanded', open ? 'true' : 'false');
+
+    if (open) {
+      liveChatInput.focus();
+    }
   };
 
-  const closeChat = () => {
-    liveChatWidget.classList.remove('is-open');
-    liveChatWidget.setAttribute('aria-hidden', 'true');
-    liveChatLauncher.setAttribute('aria-expanded', 'false');
+  const buildWhatsAppUrl = (question) => {
+    const whatsappMessage = [
+      'Live chat question from SK Builders website:',
+      `Question: ${question}`,
+    ].join('\n');
+
+    return `https://wa.me/${whatsappPhoneNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+  };
+
+  const openWhatsAppChat = (whatsappUrl) => {
+    const newWindow = window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+
+    if (!newWindow) {
+      window.location.href = whatsappUrl;
+    }
   };
 
   liveChatLauncher.addEventListener('click', () => {
-    if (liveChatWidget.classList.contains('is-open')) {
-      closeChat();
+    if (isChatOpen()) {
+      setChatOpenState(false);
       return;
     }
 
-    openChat();
+    setChatOpenState(true);
+
     if (liveChatMessages.childElementCount === 0) {
       appendMessage('Type your question and we will open WhatsApp for you.', 'bot');
     }
@@ -41,7 +58,7 @@ if (liveChatLauncher && liveChatWidget && liveChatMessages && liveChatForm && li
 
   liveChatWidget.addEventListener('click', (event) => {
     if (event.target.hasAttribute('data-close-live-chat')) {
-      closeChat();
+      setChatOpenState(false);
     }
   });
 
@@ -54,26 +71,15 @@ if (liveChatLauncher && liveChatWidget && liveChatMessages && liveChatForm && li
     }
 
     appendMessage(message, 'user');
-
-    const whatsappMessage = [
-      'Live chat question from SK Builders website:',
-      `Question: ${message}`,
-    ].join('\n');
-
-    const whatsappUrl = `https://wa.me/${whatsappPhoneNumber}?text=${encodeURIComponent(whatsappMessage)}`;
-    const newWindow = window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
-
-    if (!newWindow) {
-      window.location.href = whatsappUrl;
-    }
+    openWhatsAppChat(buildWhatsAppUrl(message));
 
     liveChatInput.value = '';
-    closeChat();
+    setChatOpenState(false);
   });
 
   document.addEventListener('keydown', (event) => {
-    if (event.key === 'Escape' && liveChatWidget.classList.contains('is-open')) {
-      closeChat();
+    if (event.key === 'Escape' && isChatOpen()) {
+      setChatOpenState(false);
     }
   });
 }
