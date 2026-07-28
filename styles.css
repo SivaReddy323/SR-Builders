@@ -717,6 +717,9 @@ footer.site-footer {
 
 @media (max-width: 520px) {
   .site-footer .footer-grid { grid-template-columns: 1fr; }
+  .footer-contact { align-items: center; text-align: center; }
+  .footer-contact-item { grid-template-columns: 1fr; justify-items: center; }
+  .footer-contact-item strong { white-space: normal; }
   .footer-bottom { flex-direction: column; gap: 0.75rem; text-align: center; }
 }
 
