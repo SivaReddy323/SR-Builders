@@ -586,7 +586,12 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0.6rem;
 }
 
-.about-text p { color: var(--muted); line-height:1.6; }
+.about-text p {
+  color: var(--muted);
+  line-height: 1.6;
+  margin: 0;
+  text-align: left;
+}
 
 .about-text p + p {
   margin-top: 0.9rem;

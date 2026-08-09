@@ -38,12 +38,6 @@
     const { jsPDF } = window.jspdf;
     const doc = new jsPDF({ unit: 'pt', format: 'a4' });
 
-    const generatedDate = new Date().toLocaleDateString('en-IN', {
-      year: 'numeric',
-      month: 'short',
-      day: '2-digit'
-    });
-
     doc.setFontSize(18);
     doc.text('SK Builders - Projects Portfolio', 40, 46);
 
@@ -51,7 +45,7 @@
     doc.setTextColor(80);
     doc.text('Company: Krishna Enterprises', 40, 66);
     doc.text('GSTIN: 36AFTPT3563P1ZB', 40, 82);
-    doc.text('Generated: ' + generatedDate, 40, 98);
+    doc.text('Established in 2003', 40, 98);
 
     doc.setFontSize(13);
     doc.setTextColor(25);
