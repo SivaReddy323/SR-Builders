@@ -8,12 +8,12 @@
       name="description"
       content="Krishna Enterprises provides comprehensive electrical, plumbing, CCTV, and fire safety installation services with professional, certified technicians."
     />
-    <link rel="icon" type="image/jpeg" sizes="32x32" href="assets/images/KL.jpeg" />
-    <link rel="apple-touch-icon" href="assets/images/KL.jpeg" />
+    <link rel="icon" type="image/jpeg" sizes="32x32" href="assets/images/krishna-enterprises-logo.jpg" />
+    <link rel="apple-touch-icon" href="assets/images/krishna-enterprises-logo.jpg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -23,12 +23,13 @@
       <div class="container">
         <nav>
           <a class="brand" href="#">
-            <img class="brand-logo" src="assets/images/KL.jpeg" alt="Krishna Enterprises logo" />
+            <img class="brand-logo" src="assets/images/krishna-enterprises-logo.jpg" alt="Krishna Enterprises logo" />
             <span class="brand-name">Krishna <span>Enterprises</span></span>
           </a>
           <div class="nav-links">
             <a href="#about">About</a>
             <a href="#services">Services</a>
+            <a href="#projects-hub">Projects</a>
             <a href="#contact">Contact</a>
           </div>
         </nav>
@@ -53,7 +54,7 @@
         </div>
         <div class="hero-card">
           <img
-            src="assets/images/hero-bg.jpg"
+            src="assets/images/fire.png"
             alt="Technicians installing electrical wiring, plumbing pipes, CCTV cameras, and fire safety systems"
           />
         </div>
@@ -207,6 +208,40 @@
           <div class="reason-card">
             <h3>End-to-End Installation</h3>
             <p>From electrical wiring and plumbing systems to CCTV surveillance and fire safety setups, we provide complete installation services under one roof, reducing coordination challenges and ensuring seamless project execution.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects-hub" class="section container">
+        <div class="portfolio-sheet">
+          <p class="sheet-top-title">Projects Portfolio</p>
+          <h2>Current and Past Project Highlights</h2>
+          <p class="sheet-subtitle">Trusted installation partner for major developers across Hyderabad and Bangalore.</p>
+
+          <div class="logo-cloud top">
+            <span class="logo-pill">Sumadhura</span>
+            <span class="logo-pill">Aparna</span>
+            <span class="logo-pill">Four Walls</span>
+            <span class="logo-pill">Sai Tirumala</span>
+            <span class="logo-pill">Vasathi</span>
+          </div>
+
+          <div class="center-mark">
+            <p class="center-mark-title">KRISHNA ENTERPRISES</p>
+            <p class="center-mark-subtitle">Trusted Electrical and Plumbing Contractors Since 2003</p>
+          </div>
+
+          <div class="logo-cloud bottom">
+            <span class="logo-pill">Marvel Infra</span>
+            <span class="logo-pill">SS Builders</span>
+            <span class="logo-pill">Sri Gayathri</span>
+            <span class="logo-pill">Balaji Developers</span>
+            <span class="logo-pill">Venu Builders</span>
+          </div>
+
+          <div class="portfolio-actions">
+            <button type="button" class="btn btn-primary" id="download-projects-pdf">Download Projects PDF</button>
+            <a class="btn btn-secondary" href="#past-projects">Browse Past Projects</a>
           </div>
         </div>
       </section>
@@ -388,6 +423,9 @@
         <button type="submit" class="btn btn-primary whatsapp-btn">📲 Send to WhatsApp</button>
       </form>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jspdf-autotable@3.8.2/dist/jspdf.plugin.autotable.min.js"></script>
+    <script src="projects-pdf.js"></script>
     <script src="live-chat.js"></script>
     <script src="consultation.js"></script>
   </body>
